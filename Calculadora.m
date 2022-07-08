@@ -80,3 +80,19 @@ subplot (2, 1, 2);  % Posición superior
   plot (t, ip);     % Dibujo del gráfico de la corriente
   grid on;          % Activación de al malla
   title (label_ip); % Título del subgráfico
+
+label_var = strcat(
+            "R =\t",num2str(R),
+            "\nL =\t",num2str(L),
+            "\nC =\t",num2str(C),
+            "\nV =\t",num2str(V),
+            "\nw =\t",num2str(w),
+            "\nX =\t",num2str(X),
+            "\nZ =\t",num2str(Z),
+            "\nA =\t",num2str(A),
+            "\nB =\t",num2str(B),
+            "\n",label_qp,
+            "\n",label_ip
+            );
+
+msgbox(label_var,"Variables");
